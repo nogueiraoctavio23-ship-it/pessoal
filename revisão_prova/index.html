@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+    <h1>🎮 Campeonato Mini Games</h1> <br>
+    </header>
+    <p>Inscrição de participantes</p>
+
+    <section>
+        <div>
+    <h3>Dados do participante</h3>
+
+    <form action="cadastro">
+
+    <label for="nome">
+        Nome Completo: 
+        <input type="text" id="nome" placeholder="digite seu nome">
+   
+</label>
+        
+    <br>
+    <label for="idade">
+        Idade: 
+    <input type="number" id="idade" placeholder="Digite sua idade">
+    </label>
+    <label for="data_nascimento">
+        Data de nascimento:
+        <input type="date" id="data_nascimento" placeholder="digite sua data de nascimento">
+    </label>
+<br>
+    <label for="email">
+        E-mail: 
+        <input type="email" id="email" placeholder="digite seu email">
+    </label>
+    </form>
+        </div>
+<br>
+<hr>
+
+        <div>
+            <h3>Preferências</h3> 
+            <br>
+            <h4>Dificuldade</h4>
+
+            <label for="facil"> 
+                <input type="radio" id="facil">
+                Fácil
+               
+            </label>
+            <label for="medio">
+                <input type="radio" id="medio">
+                Médio
+                
+            </label>
+            <label for="dificil">
+                <input type="radio" id="dificil">
+                Difícil
+                
+            </label>
+
+            <h4>Jogos favoritos</h4>
+
+            <label for="velha">
+                <input type="checkbox" id="velha">
+                Jogo da Velha
+                
+            </label>
+            <label for="soduko">
+                <input type="checkbox" id="soduko">
+                Soduko
+                
+            </label>
+            <label for="mario">
+                <input type="checkbox" id="mario">
+                Mario Bros
+                
+            </label>
+
+<h4>Personagem</h4>
+<select name="personagem" id="personagem">
+    <option data="" type="">Personagens: </option>
+    <option value="😁">😁</option>
+    <option value="😂">😂</option>
+    <option value="🤣">🤣</option>
+</select>
+            <h4>Mensagem para o campeonato</h4>
+
+            <textarea rows="8" cols="50" placeholder="Escreva aqui o que quiser..."></textarea>
+<br>
+            <button type="button" onclick="cadastrar()">Cadastrar participante</button>
+        </div>
+    </section>
+</body>
+
+<script src="script.js"></script>
+</html>

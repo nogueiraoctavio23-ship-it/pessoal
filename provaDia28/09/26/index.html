@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <span class="etiqueta">AVALIAÇÂO PRÁTICA</span>
+        <h1>Programação Front-End</h1>
+        <p>Sistema de Inscrição de Tecnologia</p>
+
+        <img src="https://suap.ifgoiano.edu.br/media/edu/material_aula/Seminfo-81c0c52674aa4f0b8dc2bce258371c00.png" alt="" style="width: 90px">
+    </header>
+        <main>
+<section>
+     <h2>Orintações Gerais da Avaliação</h2>
+                <br>
+     <div class="container">
+            <div class="caixa" style="border: 2px solid plum; border-radius: 9px; width: 500px;">
+                <h4>Objetivo</h4>
+                <p>
+                  Desenvolver um sistema web completo de <br>
+                  inscrição integrando formulário estruturado <br>
+                  em HTML5, estilização com CSS3/Flexbox e validação interativa com <br>
+                   JavaScript.
+                </p>
+            </div>
+            <div class="caixa" style="border: 2px solid plum; border-radius: 9px; width: 450px">
+                <h4>Orientações de Entrega</h4>
+                <p>
+                   Criar uma pasta contendo index.html, <br>
+                    style.css e script.js (ou arquivo único <br>
+                     integrado).
+                </p>
+            </div>
+            <div  class="caixa" style="border: 2px solid plum; border-radius: 9px; width: 450px; font-size: 15px;">
+                <h4>Critérios de Avaliação</h4>
+                <p>
+                  Funcionamento correto das validações, legibilidade do codigo, responsividade 
+                </p>
+            </div>
+        </div>
+
+        <h4>Cronograma e Distribuição de Tempo Sugerida</h4>
+
+        <div class="tabela">
+            <div class="linha cabeçalho-tabela" style="border: 1px solid grey; border-radius: 4px; height: 50px; background-color: beige;">
+                <span><strong>Etapa</strong></span>
+                <span><strong>Atividade / Descrição</strong></span>
+                <span><strong>Tempo Estimado</strong></span>
+            </div>
+
+            <div class="linha">
+                <span>Etapa 1</span>
+                <span>Estruturação HTML5 do formulário de Inscrição</span>
+                <span>45 min</span>
+            </div>
+            
+            <div class="linha">
+                <span>Etapa 2</span>
+                <span>Estilização e Layout Responsivo com CSS3</span>
+                <span>45 min</span>
+            </div>
+            
+            <div class="linha">
+                <span>Etapa 3</span>
+                <span>Lógica de Validação e Manipulação do DOM com JavaScript</span>
+                <span>60 min</span>
+            </div>
+            
+            <div class="linha">
+                <span>Etapa 4</span>
+                <span>Testes Finais, Correções e Validação de Casos de Borda</span>
+                <span>30 min</span>
+            </div>
+        </div>
+
+</section>
+<br>
+<br>
+<section>
+    <h2>Etapa 1: Estruturação HTML5</h2>
+    <p>O formulário de inscrição deve conter os seguintes campos estruturados de forma semântica:</p>
+
+    <div class="container">
+    <div class="caixa" style="border: 2px solid plum; border-radius: 9px; width: 450px;">
+        <h3 style="color: purple;">Campos de Texto e Numérico</h3>
+
+        <p>
+            Nome Completo: input do tipo text obrigatório (required). <br>
+            Idade: input do tipo number com limite minimo de 14 anos <br>
+            (min="14").
+        </p>
+    </div>
+    <div class="caixa" style="border: 2px solid plum; border-radius: 9px; width: 450px;">
+        <h3 style="color: purple;">Seleções e Interesses</h3>
+        <p>
+            Turma: elemento select com opções (ex: 1 Info, 2 Info, 3 Info). <br>
+            Categoria do Projeto: botões de rádio (type="radio") para <br> escolha única (ex: Web, Mobile, Robótica). <br>
+            Interesses Adicionais: caixas de seleção (type="checkbox") para múltiplos
+        </p>
+    </div>
+</div>
+</section>
+<br>
+<br>
+<section>
+    <h3 >Etapa 2: Estilização com CSS3</h3>
+    <p>Diretrizes de design e layout para criar uma interface limpa e amigável</p>
+
+    <div class="container">
+    <div class="caixa" style="border: 2px solid plum; border-radius: 9px; width: 450px;">
+       <h4 style="color: purple;">Layout Centralizado</h4>
+    <p>Utilizar Flexbox ou Grid para centralizar o <br>
+        cartão de inscrição na tela com bom <br>
+        espaçamento externo.
+    </p>
+    </div>
+    <div class="caixa" style="border: 2px solid plum; border-radius: 9px; width: 450px;">
+        <h3 style="color: purple;">Tipografia e Cores</h3>
+        <p>
+            Fontes limpar (ex: Inter ou Arial), paleta <br>
+            profissional com contraste adequados e <br>
+            bordas arredondadas.
+        </p>
+    </div>
+    <div class="caixa" style="border: 2px solid plum; border-radius: 9px; width: 450px;">
+        <h3 style="color: purple;">Feedback Visual</h3>
+        <p>
+            Estados de foco evidentes em inputs e <br>
+            botões com transições suaves de cor e <br>
+            sombra ao interagir.
+        </p>
+    </div>
+</div>
+</section>
+<br>
+<br>
+<section style="border: 1px solid black;">
+    <h2>Etapa 3: Lógica JavaScript e Validações</h2>
+    <p>
+        Regras obrigatorias de script que devem ser implementadas no sistema:
+    </p> 
+    <p style="border: 1px solid black; border-radius: 3px;">
+        <strong>Validação de Envio Padrão</strong>: Interceptar o evento submit e utilizando event.preventDefault().
+    </p>
+    <p style="border: 1px solid black; border-radius: 3px;">
+        <strong>ção de Idade</strong>: Verificar se a idade informada é estreitamente menor que 14 anos. Caso seja, exibir mensagem jde erro amigável e bloquear o <br>
+         cadastro.
+    </p>
+    <p style="border: 1px solid black; border-radius: 3px;">
+        <strong>Seleção obrigatoria de categoria</strong>: Garantir que um botão de radio de categoria foi selecionado antes de prosseguir.
+    </p>
+    <p style="border: 1px solid black; border-radius: 3px;">
+      <strong>Exibição de resumo no DOM</strong>: Criar dinamicamente um bloco de confirmação elegante exibindo todos os dados preenchidos após o sucesso da <br>
+        validação.
+    </p>
+
+</section>
+<br>
+<br>
+<section>
+    <h2>Simulador Oficial da Prova</h2>
+    <p>Teste em tempo real o formulario da prova de Front-End com todas as validações exigidas na avaliação</p>
+
+    <form id="formulario">
+<div>
+        <label for="nome">
+            Nome Completo do Aluno:
+            <input type="text" id="nome" placeholder="Ex: Ana clara Souza" required>
+        </label>
+        <br>
+        <br>
+        <label for="idade">
+            Idade(Minimo 14 anos)
+            <input type="number" id="idade" min="0" placeholder="Ex: 16" required>
+        </label>
+        <select id="turma">
+            Selecione sua turma
+            <option value="Escolha sua turma">Escolha sua turma</option>
+            <option value="1 Info">1 Info</option>
+            <option value="2 Info">2 Info</option>
+            <option value="3 Info">3 Info</option>
+        </select>
+        <br>
+        <h3>Categoria do Projeto</h3>
+        <label for="web">
+            <input type="radio" id="web" name="categoria" value="web">
+            Desenvolvimento Web
+        </label>
+        <label for="mobile">
+            <input type="radio" id="mobile" name="categoria" value="mobile">
+            Apps Mobile
+        </label>
+        <label for="robotica">
+            <input type="radio" id="robotica" name="categoria" value="robotica">
+            Robótica & Iot
+        </label>
+
+        <h3>Áreas de Interesse Adicionais</h3>
+
+        <label for="categoria">
+            <input type="checkbox" id="ia">
+            Inteligencia Artificial
+        </label>
+        <label for="categoria">
+            <input type="checkbox" id="jogos">
+           Jogos Educativos
+        </label>
+        <label for="categoria">
+            <input type="checkbox" id="sustentabilidade">
+            Sustentabilidade
+        </label>
+<br>
+<br>
+        <button type="submit">
+            Realizar Inscrição
+        </button>   
+        <button type="button">
+            Limpar Formulario
+        </button>
+</div>
+    </form>
+</section>
+
+        </main>
+<br>
+<br>
+        <footer>
+            <br>    
+            Avaliação Prática de Programação de Front-End <br>
+            <p>Ambiente integrado à ensino e simulação continua.</p>
+        </footer> 
+        <script src="index.js"></script>
+</body>
+</html>
